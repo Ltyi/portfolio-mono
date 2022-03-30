@@ -8,7 +8,8 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-strongly-recommended',
     '@vue/standard',
-    '@vue/eslint-config-typescript/recommended'
+    '@vue/typescript/recommended',
+    'plugin:prettier/recommended'
   ],
 
   parserOptions: {
