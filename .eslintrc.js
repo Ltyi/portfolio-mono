@@ -16,6 +16,15 @@ module.exports = {
     ecmaVersion: 2020
   },
 
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: ['./packages/*/tsconfig.json']
+      }
+    }
+  },
+
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
