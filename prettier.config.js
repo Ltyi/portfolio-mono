@@ -8,5 +8,6 @@ module.exports = {
   bracketSameLine: false,
   arrowParens: 'avoid',
   endOfLine: 'lf',
-  htmlWhitespaceSensitivity: 'ignore'
+  htmlWhitespaceSensitivity: 'ignore',
+  plugins: [require('prettier-plugin-tailwindcss')]
 };
